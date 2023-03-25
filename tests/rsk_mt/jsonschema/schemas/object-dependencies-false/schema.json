@@ -1,0 +1,8 @@
+{
+    "$id": "test://data/",
+    "title": "object type with dependencies false",
+    "type": "object",
+    "dependencies": {
+        "baz": false
+    }
+}

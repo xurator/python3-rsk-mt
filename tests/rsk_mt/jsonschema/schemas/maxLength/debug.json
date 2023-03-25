@@ -1,0 +1,23 @@
+[
+    {
+        "value": false, "returns": true, "results": {}
+    },
+    {
+        "value": "Aa", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "maxLength": true
+                }
+            }
+        }
+    },
+    {
+        "value": "abc", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "maxLength": false
+                }
+            }
+        }
+    }
+]

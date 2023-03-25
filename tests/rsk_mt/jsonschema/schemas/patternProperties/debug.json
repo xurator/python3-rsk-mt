@@ -1,0 +1,36 @@
+[
+    {
+        "value": false, "returns": true, "results": {}
+    },
+    {
+        "value": {}, "returns": true, "results": {}
+    },
+    {
+        "value": {"bar": 2}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "patternProperties": true
+                }
+            },
+            "/bar": {
+                "test://data/#/patternProperties/^b.*$": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"bar": {}}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "patternProperties": false
+                }
+            },
+            "/bar": {
+                "test://data/#/patternProperties/^b.*$": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

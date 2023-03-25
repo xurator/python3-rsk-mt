@@ -1,0 +1,14 @@
+{
+    "$id": "test://data/",
+    "title": "oneOf validation",
+    "oneOf": [
+        {
+            "type": "number",
+            "maximum": 0.2
+        },
+        {
+            "type": "string",
+            "pattern": "oo"
+        }
+    ]
+}

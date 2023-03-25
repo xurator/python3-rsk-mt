@@ -1,0 +1,31 @@
+[
+    {
+        "value": -9.7, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "foo(", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": false
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "$id": "test://data/",
+    "title": "anyOf validation",
+    "anyOf": [
+        {
+            "type": ["string", "array"]
+        },
+        {
+            "enum": [null, {}]
+        }
+    ]
+}

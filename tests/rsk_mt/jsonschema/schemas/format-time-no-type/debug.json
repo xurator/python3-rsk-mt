@@ -1,0 +1,23 @@
+[
+    {
+        "value": 0.5, "returns": true, "results": {}
+    },
+    {
+        "value": "00:00:00Z", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "format": false
+                }
+            }
+        }
+    }
+]

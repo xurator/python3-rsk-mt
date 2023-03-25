@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "integer type with exclusiveMinimum",
+    "type": "integer",
+    "exclusiveMinimum": 0
+}

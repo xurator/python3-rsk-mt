@@ -1,0 +1,50 @@
+[
+    {
+        "value": {}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"bar": 3}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": -99}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": false
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

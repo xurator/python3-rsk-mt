@@ -1,0 +1,36 @@
+[
+    {
+        "value": 33, "returns": true, "results": {}
+    },
+    {
+        "value": [], "returns": true, "results": {}
+    },
+    {
+        "value": [1], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "items": true
+                }
+            },
+            "/0": {
+                "test://data/#/items": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": [false], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "items": false
+                }
+            },
+            "/0": {
+                "test://data/#/items": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

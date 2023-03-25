@@ -1,0 +1,47 @@
+[
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "anyOf": true
+                },
+                "test://data/#/anyOf/0": {
+                    "type": true
+                },
+                "test://data/#/anyOf/1": {
+                    "enum": false
+                }
+            }
+        }
+    },
+    {
+        "value": {}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "anyOf": true
+                },
+                "test://data/#/anyOf/0": {
+                    "type": false
+                },
+                "test://data/#/anyOf/1": {
+                    "enum": true
+                }
+            }
+        }
+    },
+    {
+        "value": 1, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "anyOf": false
+                },
+                "test://data/#/anyOf/0": {
+                    "type": false
+                },
+                "test://data/#/anyOf/1": {
+                    "enum": false
+                }
+            }
+        }
+    }
+]

@@ -1,6 +1,6 @@
 ### SPDX-License-Identifier: GPL-2.0-or-later
 
-"""Test cases for rsk_mt.enforce.encoding."""
+"""Test cases for rsk_mt.enforce.encoding"""
 
 import os
 from decimal import Decimal

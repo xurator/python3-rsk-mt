@@ -1,0 +1,31 @@
+[
+    {
+        "value": "Zm9vYmFyYmF6", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contentEncoding": true
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contentEncoding": false
+                }
+            }
+        }
+    },
+    {
+        "value": -1, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

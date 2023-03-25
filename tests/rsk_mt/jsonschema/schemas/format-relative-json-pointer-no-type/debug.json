@@ -1,0 +1,23 @@
+[
+    {
+        "value": true, "returns": true, "results": {}
+    },
+    {
+        "value": "0/foo/bar", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "format": false
+                }
+            }
+        }
+    }
+]

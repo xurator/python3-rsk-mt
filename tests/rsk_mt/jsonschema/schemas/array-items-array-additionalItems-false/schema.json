@@ -1,0 +1,13 @@
+{
+    "$id": "test://data/",
+    "title": "array type with items array additionalItems false",
+    "type": "array",
+    "items": [{
+        "type": "integer"
+    }, {
+        "type": "integer"
+    }, {
+        "type": "boolean"
+    }],
+    "additionalItems": false
+}

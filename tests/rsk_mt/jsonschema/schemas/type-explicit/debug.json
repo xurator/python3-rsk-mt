@@ -1,0 +1,28 @@
+[
+    {
+        "value": 0, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "allOf": true
+                },
+                "test://data/#/allOf/0": {
+                    "enum": true
+                }
+            }
+        }
+    },
+    {
+        "value": null, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false,
+                    "allOf": false
+                },
+                "test://data/#/allOf/0": {
+                    "enum": false
+                }
+            }
+        }
+    }
+]

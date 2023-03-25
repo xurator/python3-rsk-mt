@@ -1,0 +1,22 @@
+[
+    {
+        "value": "bar", "returns": true, "results": {}
+    },
+    {
+        "value": {}, "returns": true, "results": {}
+    },
+    {
+        "value": {"foo": "bar"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    }
+]

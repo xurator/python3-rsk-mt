@@ -1,0 +1,32 @@
+[
+    {
+        "value": [1, 2, 3], "returns": true, "results": {}
+    },
+    {
+        "value": "", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "pattern": true
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "pattern": false
+                }
+            }
+        }
+    },
+    {
+        "value": "bar", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "pattern": true
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "object type with maxProperties",
+    "type": "object",
+    "maxProperties": 1
+}

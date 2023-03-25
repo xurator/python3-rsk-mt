@@ -1,0 +1,11 @@
+{
+    "$id": "test://data/",
+    "title": "if-true-else validation",
+    "if": {
+        "type": "number"
+    },
+    "then": true,
+    "else": {
+        "type": "string"
+    }
+}

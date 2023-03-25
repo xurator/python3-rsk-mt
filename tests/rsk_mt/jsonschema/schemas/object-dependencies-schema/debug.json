@@ -1,0 +1,90 @@
+[
+    {
+        "value": {"foo": 2}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": 2, "bar": []}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": 2, "bar": "good", "baz": "yes"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true,
+                    "dependencies": true
+                },
+                "test://data/#/dependencies/baz": {
+                    "patternProperties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            },
+            "/bar": {
+                "test://data/#/dependencies/baz/patternProperties/^b": {
+                    "type": true
+                }
+            },
+            "/baz": {
+                "test://data/#/dependencies/baz/patternProperties/^b": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": 2, "bar": [], "baz": "no"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true,
+                    "dependencies": false
+                },
+                "test://data/#/dependencies/baz": {
+                    "patternProperties": false
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            },
+            "/bar": {
+                "test://data/#/dependencies/baz/patternProperties/^b": {
+                    "type": false
+                }
+            },
+            "/baz": {
+                "test://data/#/dependencies/baz/patternProperties/^b": {
+                    "type": true
+                }
+            }
+        }
+    }
+]

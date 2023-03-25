@@ -1,0 +1,20 @@
+[
+    {
+        "value": false, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": null, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

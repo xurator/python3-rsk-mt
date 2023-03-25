@@ -1,0 +1,38 @@
+[
+    {
+        "value": [], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": ["foo"], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": ["foo", "bar"], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": ["foo", "foo"], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "uniqueItems": false
+                }
+            }
+        }
+    }
+]

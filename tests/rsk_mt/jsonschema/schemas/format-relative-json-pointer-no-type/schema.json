@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format relative-json-pointer with no type",
+    "format": "relative-json-pointer"
+}

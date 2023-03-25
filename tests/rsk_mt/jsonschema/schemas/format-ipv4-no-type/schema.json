@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format ipv4 with no type",
+    "format": "ipv4"
+}

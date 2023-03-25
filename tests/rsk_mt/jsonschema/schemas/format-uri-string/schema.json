@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "format uri string",
+    "type": "string",
+    "format": "uri"
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "value": null, "returns": true, "results": {}
+    },
+    {
+        "value": [0, 1, false], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "items": true
+                }
+            },
+            "/0": {
+                "test://data/#/items/0": {
+                    "type": true
+                }
+            },
+            "/1": {
+                "test://data/#/items/1": {
+                    "type": true
+                }
+            },
+            "/2": {
+                "test://data/#/items/2": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": [false], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "items": false
+                }
+            },
+            "/0": {
+                "test://data/#/items/0": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": [0, 1, 0, 3], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "items": false,
+                    "additionalItems": false
+                }
+            },
+            "/0": {
+                "test://data/#/items/0": {
+                    "type": true
+                }
+            },
+            "/1": {
+                "test://data/#/items/1": {
+                    "type": true
+                }
+            },
+            "/2": {
+                "test://data/#/items/2": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

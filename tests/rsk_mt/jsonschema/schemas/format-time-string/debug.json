@@ -1,0 +1,31 @@
+[
+    {
+        "value": false, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": "01:02:03Z", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "24", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": false
+                }
+            }
+        }
+    }
+]

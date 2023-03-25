@@ -1,6 +1,6 @@
 ### SPDX-License-Identifier: GPL-2.0-or-later
 
-"""Test cases for rsk_mt.enforce.constraint."""
+"""Test cases for rsk_mt.enforce.constraint"""
 
 from sys import maxsize
 
@@ -86,27 +86,27 @@ class _ConstraintTestBuilder(type):
     For call failure (or success), a Constraint instance created with `arg` must
     fail (or pass) each value in `values`.
     """
-    def __new__(mcs, name, bases, dct):
+    def __new__(cls, name, bases, dct):
         constructor = dct['constructor']
         fqname = make_fqname(constructor)
         # build out class for testing `constructor`
         dct.update({
-            'test_construct_error': mcs.make_test_construct_error(
+            'test_construct_error': cls.make_test_construct_error(
                 constructor, fqname,
                 make_params_values(dct['construct_error']),
             ),
-            'test_call_failure': mcs.make_test_call(
+            'test_call_failure': cls.make_test_call(
                 constructor, fqname,
                 make_params_pairs(dct['call_failure']),
                 False,
             ),
-            'test_call_success': mcs.make_test_call(
+            'test_call_success': cls.make_test_call(
                 constructor, fqname,
                 make_params_pairs(dct['call_success']),
                 True,
             ),
         })
-        return super().__new__(mcs, name, bases, dct)
+        return super().__new__(cls, name, bases, dct)
     # make functions for use as TestCase methods
     @staticmethod
     def make_test_construct_error(constructor, fqname, values):

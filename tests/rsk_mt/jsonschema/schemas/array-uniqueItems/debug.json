@@ -1,0 +1,42 @@
+[
+    {
+        "value": [], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": [0, false], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": [[0], [false]], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": [1, 1.0], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "uniqueItems": false
+                }
+            }
+        }
+    }
+]

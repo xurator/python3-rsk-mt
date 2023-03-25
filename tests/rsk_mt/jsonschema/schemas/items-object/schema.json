@@ -1,0 +1,7 @@
+{
+    "$id": "test://data/",
+    "title": "no type with items object",
+    "items": {
+        "type": "integer"
+    }
+}

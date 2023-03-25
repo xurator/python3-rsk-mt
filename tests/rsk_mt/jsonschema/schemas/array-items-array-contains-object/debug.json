@@ -1,0 +1,56 @@
+[
+    {
+        "value": [2, true], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "items": true,
+                    "contains": false
+                }
+            },
+            "/0": {
+                "test://data/#/items/0": {
+                    "type": true
+                },
+                "test://data/#/contains": {
+                    "const": false
+                }
+            },
+            "/1": {
+                "test://data/#/items/1": {
+                    "type": true
+                },
+                "test://data/#/contains": {
+                    "const": false
+                }
+            }
+        }
+    },
+    {
+        "value": [3, false], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "items": true,
+                    "contains": true
+                }
+            },
+            "/0": {
+                "test://data/#/items/0" : {
+                    "type": true
+                },
+                "test://data/#/contains": {
+                    "const": false
+                }
+            },
+            "/1": {
+                "test://data/#/items/1": {
+                    "type": true
+                },
+                "test://data/#/contains": {
+                    "const": true
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "number type with maximum",
+    "type": "number",
+    "maximum": 0
+}

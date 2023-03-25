@@ -1,0 +1,11 @@
+[
+    {
+        "value": {"baz": "bad"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "dependencies": false
+                }
+            }
+        }
+    }
+]

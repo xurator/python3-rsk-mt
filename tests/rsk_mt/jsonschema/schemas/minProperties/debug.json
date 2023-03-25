@@ -1,0 +1,23 @@
+[
+    {
+        "value": [{"foo": "bar", "baz": "qux"}], "returns": true, "results": {}
+    },
+    {
+        "value": {"foo": "bar"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "minProperties": true
+                }
+            }
+        }
+    },
+    {
+        "value": {}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "minProperties": false
+                }
+            }
+        }
+    }
+]

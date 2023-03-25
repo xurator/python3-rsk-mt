@@ -1,0 +1,20 @@
+[
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "const": true
+                }
+            }
+        }
+    },
+    {
+        "value": "bar", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "const": false
+                }
+            }
+        }
+    }
+]

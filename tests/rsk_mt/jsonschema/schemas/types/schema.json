@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "multiple types",
+    "type": ["object", "boolean"]
+}

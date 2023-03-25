@@ -1,0 +1,47 @@
+[
+    {
+        "value": 19, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": true,
+                    "then": true
+                },
+                "test://data/#/if": {
+                    "type": true
+                },
+                "test://data/#/then": {
+                    "enum": true
+                }
+            }
+        }
+    },
+    {
+        "value": null, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": false,
+                    "else": true
+                },
+                "test://data/#/if": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": 0.5, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "if": true,
+                    "then": false
+                },
+                "test://data/#/if": {
+                    "type": true
+                },
+                "test://data/#/then": {
+                    "enum": false
+                }
+            }
+        }
+    }
+]

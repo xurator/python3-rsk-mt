@@ -1,0 +1,22 @@
+[
+    {
+        "value": 0, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "minimum": true
+                }
+            }
+        }
+    },
+    {
+        "value": -1, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "minimum": false
+                }
+            }
+        }
+    }
+]

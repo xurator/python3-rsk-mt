@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "string type with maxLength",
+    "type": "string",
+    "maxLength": 2
+}

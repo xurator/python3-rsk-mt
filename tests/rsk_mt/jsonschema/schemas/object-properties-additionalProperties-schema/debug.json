@@ -1,0 +1,77 @@
+[
+    {
+        "value": 0, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": {"bar": 7}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "additionalProperties": true
+                }
+            },
+            "/bar": {
+                "test://data/#/additionalProperties": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": 7}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": false
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar", "baz": 1}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": true,
+                    "additionalProperties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            },
+            "/baz": {
+                "test://data/#/additionalProperties": {
+                    "type": true
+                }
+            }
+        }
+    }
+]

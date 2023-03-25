@@ -1,0 +1,10 @@
+{
+    "$id": "test://data/",
+    "title": "then-else validation",
+    "then": {
+        "enum": [-0.5, 7, 13, 19]
+    },
+    "else": {
+        "type": "string"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "array type with contains true",
+    "type": "array",
+    "contains": true
+}

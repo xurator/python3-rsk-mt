@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format email with no type",
+    "format": "email"
+}

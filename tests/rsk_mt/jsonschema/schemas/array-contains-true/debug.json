@@ -1,0 +1,32 @@
+[
+    {
+        "value": [null], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contains": true
+                }
+            }
+        }
+    },
+    {
+        "value": ["foo", "bar"], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contains": true
+                }
+            }
+        }
+    },
+    {
+        "value": [], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contains": false
+                }
+            }
+        }
+    }
+]

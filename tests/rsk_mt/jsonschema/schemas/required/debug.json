@@ -1,0 +1,32 @@
+[
+    {
+        "value": -3.9, "returns": true, "results": {}
+    },
+    {
+        "value": {}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "required": false
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "required": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"bar": "foo"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "required": false
+                }
+            }
+        }
+    }
+]

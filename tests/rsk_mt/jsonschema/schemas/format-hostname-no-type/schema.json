@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format hostname with no type",
+    "format": "hostname"
+}

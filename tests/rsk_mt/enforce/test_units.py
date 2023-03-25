@@ -1,6 +1,6 @@
 ### SPDX-License-Identifier: GPL-2.0-or-later
 
-"""Test cases for rsk_mt.enforce.units."""
+"""Test cases for rsk_mt.enforce.units"""
 
 from random import randint
 from decimal import Decimal
@@ -31,32 +31,32 @@ class _UnitsTestBuilder(type):
 
     Each 4-tuple is (from value, from units, to value, to units)
     """
-    def __new__(mcs, name, bases, dct):
+    def __new__(cls, name, bases, dct):
         constructor = dct['constructor']
         fqname = make_fqname(constructor)
         # build out class for testing `constructor`
         dct.update({
-            'test_unsupported': mcs.make_test_unsupported(
+            'test_unsupported': cls.make_test_unsupported(
                 constructor, fqname,
             ),
-            'test_unsupported_default': mcs.make_test_unsupported_default(
+            'test_unsupported_default': cls.make_test_unsupported_default(
                 constructor, fqname,
             ),
-            'test_restriction': mcs.make_test_restriction(
+            'test_restriction': cls.make_test_restriction(
                 constructor, fqname,
             ),
-            'test_bad_convert': mcs.make_test_bad_convert(
+            'test_bad_convert': cls.make_test_bad_convert(
                 constructor, fqname,
             ),
-            'test_null_convert': mcs.make_test_null_convert(
+            'test_null_convert': cls.make_test_null_convert(
                 constructor, fqname,
             ),
-            'test_convert': mcs.make_test_convert(
+            'test_convert': cls.make_test_convert(
                 constructor, fqname,
                 dct['conversions'],
             ),
         })
-        return super().__new__(mcs, name, bases, dct)
+        return super().__new__(cls, name, bases, dct)
     # make functions for use as TestCase methods
     @staticmethod
     def make_test_unsupported(constructor, fqname):

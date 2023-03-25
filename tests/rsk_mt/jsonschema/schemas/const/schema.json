@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "const validation",
+    "const": "foo"
+}

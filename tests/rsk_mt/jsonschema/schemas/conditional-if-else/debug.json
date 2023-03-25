@@ -1,0 +1,30 @@
+[
+    {
+        "value": -1, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": true
+                },
+                "test://data/#/if": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": false,
+                    "else": true
+                },
+                "test://data/#/if": {
+                    "type": false
+                },
+                "test://data/#/else": {
+                    "type": true
+                }
+            }
+        }
+    }
+]

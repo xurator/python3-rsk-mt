@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "array type with maxItems",
+    "type": "array",
+    "maxItems": 2
+}

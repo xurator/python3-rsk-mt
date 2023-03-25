@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "array type with uniqueItems",
+    "type": "array",
+    "uniqueItems": true
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "value": 0, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": "2019-06-24", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "24", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": false
+                }
+            }
+        }
+    }
+]

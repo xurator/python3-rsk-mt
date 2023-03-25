@@ -1,0 +1,22 @@
+[
+    {
+        "value": "A", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "minLength": false
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "minLength": true
+                }
+            }
+        }
+    }
+]

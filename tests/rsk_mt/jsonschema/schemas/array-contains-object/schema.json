@@ -1,0 +1,12 @@
+{
+    "$id": "test://data/",
+    "title": "array type with contains object",
+    "type": "array",
+    "contains": {
+        "anyOf": [{
+            "type": "string"
+        }, {
+            "type": "integer"
+        }]
+    }
+}

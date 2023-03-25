@@ -1,0 +1,8 @@
+{
+    "$id": "test://data/",
+    "title": "not validation",
+    "not": {
+        "type": "number",
+        "maximum": 0.2
+    }
+}

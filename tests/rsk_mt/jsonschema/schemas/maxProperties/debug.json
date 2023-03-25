@@ -1,0 +1,23 @@
+[
+    {
+        "value": [], "returns": true, "results": {}
+    },
+    {
+        "value": {}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "maxProperties": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar", "baz": "qux"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "maxProperties": false
+                }
+            }
+        }
+    }
+]

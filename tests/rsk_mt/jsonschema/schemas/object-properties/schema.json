@@ -1,0 +1,10 @@
+{
+    "$id": "test://data/",
+    "title": "object type with properties",
+    "type": "object",
+    "properties": {
+        "foo": {
+            "type": "string"
+        }
+    }
+}

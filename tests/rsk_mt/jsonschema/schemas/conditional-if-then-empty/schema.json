@@ -1,0 +1,11 @@
+{
+    "$id": "test://data/",
+    "title": "if-then-empty validation",
+    "if": {
+        "type": "number"
+    },
+    "then": {
+        "enum": [-0.5, 7, 13, 19]
+    },
+    "else": {}
+}

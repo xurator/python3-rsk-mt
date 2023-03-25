@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "enum validation",
+    "enum": [null, -1, {"foo": "bar"}]
+}

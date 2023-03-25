@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "object type with minProperties",
+    "type": "object",
+    "minProperties": 1
+}

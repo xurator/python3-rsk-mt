@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "integer type",
+    "type": "integer"
+}

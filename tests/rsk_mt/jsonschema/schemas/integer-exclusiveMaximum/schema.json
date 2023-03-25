@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "integer type with exclusiveMaximum",
+    "type": "integer",
+    "exclusiveMaximum": 0
+}

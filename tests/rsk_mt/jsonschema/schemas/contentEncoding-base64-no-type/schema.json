@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "contentEncoding base64 with no type",
+    "contentEncoding": "base64"
+}

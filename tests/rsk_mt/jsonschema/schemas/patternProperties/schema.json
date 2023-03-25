@@ -1,0 +1,9 @@
+{
+    "$id": "test://data/",
+    "title": "no type with patternProperties",
+    "patternProperties": {
+        "^b.*$": {
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "value": ["python3-rsk-mt"], "returns": true, "results": {}
+    },
+    {
+        "value": "python3-rsk-mt.roughsketch.co.uk", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "format": false
+                }
+            }
+        }
+    }
+]

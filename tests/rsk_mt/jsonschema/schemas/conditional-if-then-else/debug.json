@@ -1,0 +1,50 @@
+[
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": false,
+                    "else": true
+                },
+                "test://data/#/if": {
+                    "type": false
+                },
+                "test://data/#/else": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": -0.5, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": true,
+                    "then": true
+                },
+                "test://data/#/if": {
+                    "type": true
+                },
+                "test://data/#/then": {
+                    "enum": true
+                }
+            }
+        }
+    },
+    {
+        "value": [], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "if": false,
+                    "else": false
+                },
+                "test://data/#/if": {
+                    "type": false
+                },
+                "test://data/#/else": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

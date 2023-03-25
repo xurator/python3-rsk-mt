@@ -1,0 +1,23 @@
+[
+    {
+        "value": "foo", "returns": true, "results": {}
+    },
+    {
+        "value": -1, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "exclusiveMaximum": true
+                }
+            }
+        }
+    },
+    {
+        "value": 0.0, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "exclusiveMaximum": false
+                }
+            }
+        }
+    }
+]

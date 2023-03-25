@@ -1,0 +1,10 @@
+{
+    "$id": "test://data/",
+    "title": "type explicit implementation",
+    "type": "number",
+    "allOf": [
+        {
+            "enum": [-1, 0, 0.5]
+        }
+    ]
+}

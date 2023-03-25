@@ -1,0 +1,22 @@
+[
+    {
+        "value": {}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "maxProperties": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar", "baz": "qux"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "maxProperties": false
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "value": {}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar", "bar": 4}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "patternProperties": true
+                }
+            },
+            "/bar": {
+                "test://data/#/patternProperties/^b.*$": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"bar": "baz"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "patternProperties": false
+                }
+            },
+            "/bar": {
+                "test://data/#/patternProperties/^b.*$": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

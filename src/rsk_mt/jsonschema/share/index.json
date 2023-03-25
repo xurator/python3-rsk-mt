@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://json-schema.roughsketch.co.uk/rsk-mt/index.json",
+    "title": "JSON Schema index.",
+    "description": "An index mapping Schema URI to local filename.",
+    "$ref": "#index",
+    "definitions": {
+        "index": {
+            "$id": "#index",
+            "description": "Each property name is the URI of a Schema. The corresponding property value records a local filename from which that Schema can be loaded.",
+            "type": "object",
+            "propertyNames": {
+                "type": "string",
+                "format": "uri"
+            },
+            "additionalProperties": {
+                "type": "string"
+            }
+        }
+    }
+}

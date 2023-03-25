@@ -1,0 +1,15 @@
+[
+    {
+        "value": null, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "if": false,
+                    "else": true
+                },
+                "test://data/#/if": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

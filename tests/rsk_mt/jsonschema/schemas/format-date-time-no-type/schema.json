@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format date-time with no type",
+    "format": "date-time"
+}

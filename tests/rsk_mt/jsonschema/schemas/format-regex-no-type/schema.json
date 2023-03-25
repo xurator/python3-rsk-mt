@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format regex with no type",
+    "format": "regex"
+}

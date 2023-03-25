@@ -1,0 +1,22 @@
+[
+    {
+        "value": -0.9, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "multipleOf": true
+                }
+            }
+        }
+    },
+    {
+        "value": 4, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "multipleOf": false
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "$id": "test://data/",
+    "title": "no type with dependencies schema",
+    "properties": {
+        "foo": {
+            "type": "number"
+        }
+    },
+    "dependencies": {
+        "baz": {
+            "patternProperties": {
+                "^b": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

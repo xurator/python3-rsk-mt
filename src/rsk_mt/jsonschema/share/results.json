@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://json-schema.roughsketch.co.uk/rsk-mt/results.json",
+    "title": "JSON value validation results.",
+    "description": "A schema for reporting validation assertion results for a JSON value against a JSON Schema.",
+    "$ref": "#value-results",
+    "definitions": {
+        "value-results": {
+            "$id": "#value-results",
+            "description": "Each property name is a JSON Pointer to a value in the JSON value being validated. The corresponding property value records the results from validating that value against schemas.",
+            "type": "object",
+            "propertyNames": {
+                "type": "string",
+                "format": "json-pointer"
+            },
+            "additionalProperties": {
+                "$ref": "#schema-results"
+            }
+        },
+        "schema-results": {
+            "$id": "#schema-results",
+            "description": "Each property name is the URI of the JSON Schema used for validation. The corresponding property value records the results from each assertion test.",
+            "type": "object",
+            "propertyNames": {
+                "type": "string",
+                "format": "uri"
+            },
+            "additionalProperties": {
+                "$ref": "#assertion-results"
+            }
+        },
+        "assertion-results": {
+            "$id": "#assertion-results",
+            "description": "Each property name is an assertion keyword. The corresponding property value records a boolean result: a false value indicates test failure, a positive value test success.",
+            "type": "object",
+            "additionalProperties": {
+                "type": "boolean"
+            }
+        }
+    }
+}

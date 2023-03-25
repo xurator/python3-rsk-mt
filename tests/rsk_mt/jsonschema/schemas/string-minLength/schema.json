@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "string type with minLength",
+    "type": "string",
+    "minLength": 2
+}

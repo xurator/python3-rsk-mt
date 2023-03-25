@@ -1,0 +1,53 @@
+[
+    {
+        "value": [1, 2, false], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "items": true
+                }
+            },
+            "/0": {
+                "test://data/#/items/0": {
+                    "type": true
+                }
+            },
+            "/1": {
+                "test://data/#/items/1": {
+                    "type": true
+                }
+            },
+            "/2": {
+                "test://data/#/items/2": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": [1, 2, false, true], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "items": true,
+                    "additionalItems": false
+                }
+            },
+            "/0": {
+                "test://data/#/items/0": {
+                    "type": true
+                }
+            },
+            "/1": {
+                "test://data/#/items/1": {
+                    "type": true
+                }
+            },
+            "/2": {
+                "test://data/#/items/2": {
+                    "type": true
+                }
+            }
+        }
+    }
+]

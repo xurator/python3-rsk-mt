@@ -1,0 +1,31 @@
+[
+    {
+        "value": 0, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": "192.168.0.1", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "192.", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "format": false
+                }
+            }
+        }
+    }
+]

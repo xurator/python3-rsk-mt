@@ -1,0 +1,19 @@
+{
+    "$id": "test://data/",
+    "title": "object type with dependencies schema",
+    "type": "object",
+    "properties": {
+        "foo": {
+            "type": "number"
+        }
+    },
+    "dependencies": {
+        "baz": {
+            "patternProperties": {
+                "^b": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

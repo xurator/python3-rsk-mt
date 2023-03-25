@@ -1,0 +1,31 @@
+[
+    {
+        "value": {"foo": "bar"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"foo": "bar", "bar": 2}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "properties": true,
+                    "additionalProperties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            }
+        }
+    }
+]

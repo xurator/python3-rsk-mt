@@ -1,0 +1,65 @@
+[
+    {
+        "value": [], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "oneOf": false
+                },
+                "test://data/#/oneOf/0": {
+                    "type": false
+                },
+                "test://data/#/oneOf/1": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": 0.1, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "oneOf": true
+                },
+                "test://data/#/oneOf/0": {
+                    "type": true,
+                    "maximum": true
+                },
+                "test://data/#/oneOf/1": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": "foo", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "oneOf": true
+                },
+                "test://data/#/oneOf/0": {
+                    "type": false
+                },
+                "test://data/#/oneOf/1": {
+                    "type": true,
+                    "pattern": true
+                }
+            }
+        }
+    },
+    {
+        "value": "bar", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "oneOf": false
+                },
+                "test://data/#/oneOf/0": {
+                    "type": false
+                },
+                "test://data/#/oneOf/1": {
+                    "type": true,
+                    "pattern": false
+                }
+            }
+        }
+    }
+]

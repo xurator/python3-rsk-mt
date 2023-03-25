@@ -1,0 +1,23 @@
+[
+    {
+        "value": 0, "returns": true, "results": {}
+    },
+    {
+        "value": [], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "maxItems": true
+                }
+            }
+        }
+    },
+    {
+        "value": [1, 2, 3], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "maxItems": false
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "value": [-1], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contains": true
+                }
+            },
+            "/0": {
+                "test://data/#/contains": {
+                    "anyOf": true
+                },
+                "test://data/#/contains/anyOf/0": {
+                    "type": false
+                },
+                "test://data/#/contains/anyOf/1": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": [{}, "foo"], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contains": true
+                }
+            },
+            "/0": {
+                "test://data/#/contains": {
+                    "anyOf": false
+                },
+                "test://data/#/contains/anyOf/0": {
+                    "type": false
+                },
+                "test://data/#/contains/anyOf/1": {
+                    "type": false
+                }
+            },
+            "/1": {
+                "test://data/#/contains": {
+                    "anyOf": true
+                },
+                "test://data/#/contains/anyOf/0": {
+                    "type": true
+                },
+                "test://data/#/contains/anyOf/1": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": [], "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "contains": false
+                }
+            }
+        }
+    }
+]

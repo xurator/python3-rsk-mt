@@ -1,0 +1,5 @@
+{
+    "$id": "test://data/",
+    "title": "format uri-reference with no type",
+    "format": "uri-reference"
+}

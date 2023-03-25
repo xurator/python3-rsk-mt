@@ -1,0 +1,12 @@
+{
+    "$id": "test://data/",
+    "title": "allOf validation",
+    "allOf": [
+        {
+            "type": "number"
+        },
+        {
+            "enum": [-1, 0, 0.5]
+        }
+    ]
+}

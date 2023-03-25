@@ -1,6 +1,6 @@
 ### SPDX-License-Identifier: GPL-2.0-or-later
 
-"""Test cases for rsk_mt.enforce.value."""
+"""Test cases for rsk_mt.enforce.value"""
 
 import json
 from decimal import Decimal
@@ -52,7 +52,7 @@ class _ValueTypeTestBuilder(type):
         [], [4, 5, 6],
         {}, {"abc": 789},
     )
-    def __new__(mcs, name, bases, dct):
+    def __new__(cls, name, bases, dct):
         value_type = dct['value_type']
         fqname = make_fqname(value_type)
         # get values for testing
@@ -63,65 +63,65 @@ class _ValueTypeTestBuilder(type):
         encode_overrides = dct.get('encode_overrides', ())
         decode_overrides = dct.get('decode_overrides', ())
         # derived values for testing
-        check_not_success = make_values_not_in(mcs.test_values, check_success)
-        call_error = make_values_not_in(mcs.test_values, call_success)
-        cast_error = make_values_not_in(mcs.test_values, call_success + tuple(
+        check_not_success = make_values_not_in(cls.test_values, check_success)
+        call_error = make_values_not_in(cls.test_values, call_success)
+        cast_error = make_values_not_in(cls.test_values, call_success + tuple(
             pair[0] for pair in cast_success
         ))
         # build out class for testing `constructor`
         dct.update({
-            'test_check_success': mcs.make_test_check_success(
+            'test_check_success': cls.make_test_check_success(
                 constructor, fqname,
                 make_params_values(check_success),
             ),
-            'test_check_not_success': mcs.make_test_check_not_success(
+            'test_check_not_success': cls.make_test_check_not_success(
                 constructor, fqname,
                 make_params_values(check_not_success),
             ),
-            'test_call_success': mcs.make_test_call_success(
+            'test_call_success': cls.make_test_call_success(
                 constructor, fqname,
                 make_params_values(call_success),
             ),
-            'test_call_error': mcs.make_test_call_error(
+            'test_call_error': cls.make_test_call_error(
                 constructor, fqname,
                 make_params_values(call_error),
             ),
-            'test_cast_canonical': mcs.make_test_cast_canonical(
+            'test_cast_canonical': cls.make_test_cast_canonical(
                 constructor, fqname,
                 make_params_values(call_success),
             ),
-            'test_cast_lexical': mcs.make_test_cast_lexical(
+            'test_cast_lexical': cls.make_test_cast_lexical(
                 constructor, fqname,
                 make_params_values(cast_success),
             ),
-            'test_cast_error': mcs.make_test_cast_error(
+            'test_cast_error': cls.make_test_cast_error(
                 constructor, fqname,
                 make_params_values(cast_error),
             ),
-            'expect_encoded': mcs.make_expect(encode_overrides),
-            'expect_decoded': mcs.make_expect(decode_overrides),
-            'test_json_encode_error': mcs.make_test_json_encode_error(
+            'expect_encoded': cls.make_expect(encode_overrides),
+            'expect_decoded': cls.make_expect(decode_overrides),
+            'test_json_encode_error': cls.make_test_json_encode_error(
                 constructor, fqname,
                 make_params_values(call_error),
             ),
-            'test_json_encode_canonical': mcs.make_test_json_encode_canonical(
+            'test_json_encode_canonical': cls.make_test_json_encode_canonical(
                 constructor, fqname,
                 make_params_values(call_success),
             ),
-            'test_json_decode_canonical': mcs.make_test_json_decode_canonical(
+            'test_json_decode_canonical': cls.make_test_json_decode_canonical(
                 constructor, fqname,
                 make_params_values(call_success),
             ),
-            'test_json_encode_lexical': mcs.make_test_json_encode_lexical(
+            'test_json_encode_lexical': cls.make_test_json_encode_lexical(
                 constructor, fqname,
                 make_params_values(cast_success),
             ),
-            'test_json_decode_lexical': mcs.make_test_json_decode_lexical(
+            'test_json_decode_lexical': cls.make_test_json_decode_lexical(
                 constructor, fqname,
                 make_params_values(cast_success),
             ),
         })
-        return super().__new__(mcs, name, bases, dct)
+        return super().__new__(cls, name, bases, dct)
     # make helpers
     @staticmethod
     def make_expect(overrides):

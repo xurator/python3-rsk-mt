@@ -1,0 +1,23 @@
+[
+    {
+        "value": [], "returns": true, "results": {}
+    },
+    {
+        "value": 1, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "exclusiveMinimum": true
+                }
+            }
+        }
+    },
+    {
+        "value": -0.5, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "exclusiveMinimum": false
+                }
+            }
+        }
+    }
+]

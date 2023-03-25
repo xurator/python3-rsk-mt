@@ -1,0 +1,45 @@
+[
+    {
+        "value": {"foo": "qux", "bar": false}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "properties": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": true
+                }
+            },
+            "/bar": {
+                "test://data/#/properties/bar": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"bar": true, "baz": "any"}, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "properties": true,
+                    "dependencies": true
+                }
+            },
+            "/bar": {
+                "test://data/#/properties/bar": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": {"baz": "any"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "dependencies": false
+                }
+            }
+        }
+    }
+]

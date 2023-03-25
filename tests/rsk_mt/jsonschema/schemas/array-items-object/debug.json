@@ -1,0 +1,31 @@
+[
+    {
+        "value": [1, 2], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "items": true
+                }
+            },
+            "/0": {
+                "test://data/#/items": {
+                    "type": true
+                }
+            },
+            "/1": {
+                "test://data/#/items": {
+                    "type": true
+                }
+            }
+        }
+    },
+    {
+        "value": false, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": false
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "$id": "test://data/",
+    "title": "array type with items array and contains object",
+    "type": "array",
+    "items": [{
+        "type": "integer"
+    }, {
+        "type": "boolean"
+    }],
+    "contains": {
+        "const": false
+    }
+}

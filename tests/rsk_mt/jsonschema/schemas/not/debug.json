@@ -1,0 +1,40 @@
+[
+    {
+        "value": [], "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "not": true
+                },
+                "test://data/#/not": {
+                    "type": false
+                }
+            }
+        }
+    },
+    {
+        "value": 0.3, "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "not": true
+                },
+                "test://data/#/not": {
+                    "type": true,
+                    "maximum": false
+                }
+            }
+        }
+    },
+    {
+        "value": 0.1, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "not": false
+                },
+                "test://data/#/not": {
+                    "type": true,
+                    "maximum": true
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "value": [], "returns": true, "results": {}
+    },
+    {
+        "value": "FF01::101", "returns": true, "results": {
+            "": {
+                "test://data/": {
+                    "format": true
+                }
+            }
+        }
+    },
+    {
+        "value": "FF01", "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "format": false
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "integer type with multipleOf",
+    "type": "integer",
+    "multipleOf": 2
+}

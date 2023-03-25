@@ -1,0 +1,6 @@
+{
+    "$id": "test://data/",
+    "title": "number type with multipleOf",
+    "type": "number",
+    "multipleOf": 0.3
+}

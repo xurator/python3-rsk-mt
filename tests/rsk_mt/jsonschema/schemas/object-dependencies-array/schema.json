@@ -1,0 +1,16 @@
+{
+    "$id": "test://data/",
+    "title": "object type with dependencies array",
+    "type": "object",
+    "properties": {
+        "foo": {
+            "type": "string"
+        },
+        "bar": {
+            "type": "boolean"
+        }
+    },
+    "dependencies": {
+        "baz": ["bar"]
+    }
+}

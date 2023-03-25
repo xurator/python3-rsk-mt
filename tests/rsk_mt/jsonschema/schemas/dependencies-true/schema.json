@@ -1,0 +1,12 @@
+{
+    "$id": "test://data/",
+    "title": "no type with dependencies true",
+    "properties": {
+        "foo": {
+            "type": "number"
+        }
+    },
+    "dependencies": {
+        "baz": true
+    }
+}

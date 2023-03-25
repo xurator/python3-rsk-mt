@@ -1,0 +1,18 @@
+[
+    {
+        "value": {"foo": "bad", "baz": "quz"}, "returns": false, "results": {
+            "": {
+                "test://data/": {
+                    "type": true,
+                    "properties": false,
+                    "dependencies": true
+                }
+            },
+            "/foo": {
+                "test://data/#/properties/foo": {
+                    "type": false
+                }
+            }
+        }
+    }
+]
