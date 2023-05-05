@@ -17,7 +17,7 @@ from rsk_mt.model import (
     ModelledDict,
 )
 
-from . import (
+from rsk_mt_helpers import (
     make_fqname,
     make_params_values,
 )
