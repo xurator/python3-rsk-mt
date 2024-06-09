@@ -459,14 +459,14 @@ class _ModelledDictTestBuilder(type):
             instance = self.target_cls(self.initialiser)
             for key in model.model_spec:
                 if key in instance:
-                    self.assertEquals(instance[key], self.initialiser[key])
+                    self.assertEqual(instance[key], self.initialiser[key])
                 else:
-                    self.assertEquals(model.is_mandatory(key), False)
-                    self.assertEquals(instance.get(key), None)
+                    self.assertEqual(model.is_mandatory(key), False)
+                    self.assertEqual(instance.get(key), None)
                     if 'default' in model.model_spec[key]:
                         default = model.model_spec[key]['default']
-                        self.assertEquals(model.default_value(key), default)
-                        self.assertEquals(instance[key], default)
+                        self.assertEqual(model.default_value(key), default)
+                        self.assertEqual(instance[key], default)
                     else:
                         self.assertRaises(KeyError, getitem, instance, key)
         method.__doc__ = f'Test {descr} instance getitem'
@@ -513,15 +513,15 @@ class _ModelledDictTestBuilder(type):
                     self.assertRaises(KeyError, delitem, instance, key)
                 elif key in instance:
                     del instance[key]
-                    self.assertEquals(instance.get(key), None)
+                    self.assertEqual(instance.get(key), None)
                     if 'default' in model.model_spec[key]:
                         default = model.model_spec[key]['default']
-                        self.assertEquals(model.default_value(key), default)
-                        self.assertEquals(instance[key], default)
+                        self.assertEqual(model.default_value(key), default)
+                        self.assertEqual(instance[key], default)
                     else:
                         self.assertRaises(KeyError, getitem, instance, key)
                 else:
-                    self.assertEquals(instance.get(key), None)
+                    self.assertEqual(instance.get(key), None)
                     self.assertRaises(KeyError, delitem, instance, key)
         method.__doc__ = f'Test {descr} dict delitem'
         return method
@@ -581,7 +581,7 @@ class _ModelledDictTestBuilder(type):
             instance = self.target_cls(self.initialiser)
             for key in model.model_spec:
                 if key in instance:
-                    self.assertEquals(
+                    self.assertEqual(
                         instance.setdefault(key),
                         self.initialiser[key],
                     )
